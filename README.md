@@ -22,6 +22,7 @@ docker inspect -f "{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}" 67ec
 
 ## Connection String setting to access MS SQL running in Docker Container
 Reference Article - Running and Connecting to SQL Server On Your Mac - https://www.linkedin.com/pulse/running-connecting-sql-server-your-mac-michael-ahearn/
-"ConnectionStrings": {
-    "MovieContext": "Server=127.0.0.1,1433;Database=MovieList;User ID=sa;Password=Passw0rd!"
-    }
+
+        "ConnectionStrings": {
+                "MovieContext": "Server=127.0.0.1,1433;Database=MovieList;User ID=sa;Password=Passw0rd!"
+            }
