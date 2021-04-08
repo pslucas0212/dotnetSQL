@@ -26,3 +26,7 @@ Reference Article - Running and Connecting to SQL Server On Your Mac - https://w
         "ConnectionStrings": {
                 "MovieContext": "Server=127.0.0.1,1433;Database=MovieList;User ID=sa;Password=Passw0rd!"
             }
+
+## Using Microsoft SQL Server on Red Hat OpenShift 
+Good article for setting up SQL server in OCP (and CRC).
+- https://developers.redhat.com/blog/2020/10/27/using-microsoft-sql-server-on-red-hat-openshift/
