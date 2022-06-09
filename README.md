@@ -18,14 +18,17 @@ Reference Article - https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-
 https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-2017
 
 ## Find container IP address
+```
 docker inspect -f "{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}" 67ec9fcc0880
+```
 
 ## Connection String setting to access MS SQL running in Docker Container
 Reference Article - Running and Connecting to SQL Server On Your Mac - https://www.linkedin.com/pulse/running-connecting-sql-server-your-mac-michael-ahearn/
-
-        "ConnectionStrings": {
-                "MovieContext": "Server=127.0.0.1,1433;Database=MovieList;User ID=sa;Password=Passw0rd!"
-            }
+```
+"ConnectionStrings": {
+        "MovieContext": "Server=127.0.0.1,1433;Database=MovieList;User ID=sa;Password=Passw0rd!"
+   }
+```        
 
 ## Using Microsoft SQL Server on Red Hat OpenShift 
 Good article for setting up SQL server in OCP (and CRC).
